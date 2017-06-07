@@ -71,7 +71,7 @@ ssh-keygen -t rsa -C "your's emaill address"
 * $ git add README.md
 * $ git commit -m "first commit"
 * $ git remote add origin git@github.com:yourname/yourname.github.io.git
-** 注意
+* 注意
     此处容易报错,提示出错信息：fatal: remote origin already exists.
     解决办法如下：
     1、先输入$ git remote rm origin
@@ -83,9 +83,9 @@ ssh-keygen -t rsa -C "your's emaill address"
 * [github常见操作和常见错误处理](http://blog.csdn.net/dengjianqiang2011/article/details/9260435)
 
 * $ git push -u origin master
-** 注意
-   此步易出错,问题（Non-fast-forward）的出现原因在于：git仓库中已经有一部分代码，所以它不允许你直接把你的代码覆盖上去。于是你有2个选择方式：
-   强推，即利用强覆盖方式用你本地的代码替代git仓库内的内容
+* 注意
+此步易出错,问题（Non-fast-forward）的出现原因在于：git仓库中已经有一部分代码，所以它不允许你直接把你的代码覆盖上去。于是你有2个选择方式：
+强推，即利用强覆盖方式用你本地的代码替代git仓库内的内容
    git push -f origin master
       
 这时候进入到github应该就可以看到仓库下面有一个刚刚提交的README.md的文档了。
